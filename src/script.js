@@ -52,9 +52,9 @@ scrollElement.addEventListener("wheel", (e) => {
 });
 
 nextBtn.addEventListener("click", () => {
-  scrollElement.scrollBy({ left: 200, behavior: "smooth" });
+  scrollElement.scrollBy({ left: 400, behavior: "smooth" });
 });
 
 prevBtn.addEventListener("click", () => {
-  scrollElement.scrollBy({ left: -200, behavior: "smooth" });
+  scrollElement.scrollBy({ left: -400, behavior: "smooth" });
 });
