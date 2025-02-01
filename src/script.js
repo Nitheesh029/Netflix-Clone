@@ -45,3 +45,16 @@ generateCards(movieData);
 const scrollElement = document.querySelector(".movie-card-container");
 const nextBtn = document.getElementById("next-btn");
 const prevBtn = document.getElementById("prev-btn");
+
+scrollElement.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scrollElement.scrollLeft += e.deltaY;
+});
+
+nextBtn.addEventListener("click", () => {
+  scrollElement.scrollBy({ left: 200, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+  scrollElement.scrollBy({ left: -200, behavior: "smooth" });
+});

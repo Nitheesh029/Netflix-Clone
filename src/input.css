@@ -15,3 +15,11 @@
       -2px  2px 0 white, 
        2px  2px 0 white;
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
