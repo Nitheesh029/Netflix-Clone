@@ -1,33 +1,80 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone</title>
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-black text-white">
-  <div class="h-[100vh] w-full px-[8%] py-[30px] header relative">
-    <nav class="flex justify-between items-center">
-        <img src="/images/logo.png" alt="" class="md:w-[200px] w-[100px] cursor-pointer">
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white">
+    <div class="h-[100vh] w-full px-[8%] py-[30px] header relative">
+      <nav class="flex justify-between items-center">
+        <img
+          src="/images/logo.png"
+          alt=""
+          class="md:w-[200px] w-[100px] cursor-pointer"
+        />
         <div class="flex gap-5">
-            <button class="text-md md:text-lg border-[1px] px-5 py-1 rounded-md semibold border-slate-700">English</button>
-            <button class="text-md md:text-lg px-5 py-1 rounded-md bg-red-700 font-semibold hover:bg-red-800 duration-300">Sign in</button>
+          <button
+            class="text-md md:text-lg border-[1px] px-5 py-1 rounded-md semibold border-slate-700"
+          >
+            English
+          </button>
+          <button
+            class="text-md md:text-lg px-5 py-1 rounded-md bg-red-700 font-semibold hover:bg-red-800 duration-300"
+          >
+            Sign in
+          </button>
         </div>
-    </nav>
-    <div class="mt-[200px] flex items-center justify-center flex-col">
-      <div class="text-center">
-        <h1 class="motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">Unlimited movies, TV shows <br> and more</h1>
-        <br>
-        <p>Starts at ₹149. Cancel at any time.</p>
-        <br>
-        <p>Ready to watch? Enter your email to create or restart your <br> membership.</p>
-      </div>
-      <div class="flex md:flex-row gap-5 flex-col mt-10 items-center">
-        <input type="email" class="py-4 flex-1 lg:w-[400px] md:w-[300px] w-[400px] bg-opacity-30 bg-black border-[1px] outline-none px-4 rounded-md placeholder:text-xl text-xl" placeholder="Enter email">
-        <button class="px-10 text-xl bg-bgred bg-opacity-90 hover:bg-opacity-55 duration-500 rounded-md py-4 w-[200px]">Get Started ></button>
+      </nav>
+      <div class="mt-[200px] flex items-center justify-center flex-col">
+        <div class="text-center">
+          <h1
+            class="motion-translate-y-in-100 motion-duration-[2s] motion-ease-spring-smoothtext-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold"
+          >
+            Unlimited movies, TV shows <br />
+            and more
+          </h1>
+          <br />
+          <p>Starts at ₹149. Cancel at any time.</p>
+          <br />
+          <p>
+            Ready to watch? Enter your email to create or restart your <br />
+            membership.
+          </p>
+        </div>
+        <div class="flex md:flex-row gap-5 flex-col mt-10 items-center">
+          <input
+            type="email"
+            class="py-4 flex-1 lg:w-[400px] md:w-[300px] w-[400px] bg-opacity-30 bg-black border-[1px] outline-none px-4 rounded-md placeholder:text-xl text-xl"
+            placeholder="Enter email"
+          />
+          <button
+            class="px-10 text-xl bg-bgred bg-opacity-90 hover:bg-opacity-55 duration-500 rounded-md py-4 w-[200px]"
+          >
+            Get Started >
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+    <div class="mt-20 px-[8%]">
+      <div class="text-xl md:text-5xl font-bold">Trending now</div>
+      <div class="mt-[50px] flex justify-center relative">
+        <button
+          class="absolute text-2xl md:text-4xl left-[0%] top-[0%] md:left-[100px] md:top-[125px] rounded-full md:px-1 md:py-10 py-1 bg-slate-900 px-10 z-10"
+        >
+          <
+        </button>
+        <div
+          class="movie-card-container md:w-[80%] grid grid-flow-col auto-cols-max overflow-x-scroll overflow-y-hidden gap-[40px] scroll-smooth"
+        ></div>
+        <button
+          class="absolute text-2xl md:text-4xl right-[0%] top-[0%] md:right-[100px] md:top-[125px] rounded-full md:px-1 md:py-10 py-1 bg-slate-900 px-10 z-10"
+        >
+          >
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
