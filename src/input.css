@@ -7,6 +7,17 @@
     background-size: cover;
     background-position: center;
 }
+.reason-card{
+  background: hsla(231, 44%, 18%, 1);
+
+background: linear-gradient(315deg, hsla(231, 44%, 18%, 1) 0%, hsla(230, 64%, 22%, 1) 50%, hsla(319, 33%, 43%, 1) 100%);
+
+background: -moz-linear-gradient(315deg, hsla(231, 44%, 18%, 1) 0%, hsla(230, 64%, 22%, 1) 50%, hsla(319, 33%, 43%, 1) 100%);
+
+background: -webkit-linear-gradient(315deg, hsla(231, 44%, 18%, 1) 0%, hsla(230, 64%, 22%, 1) 50%, hsla(319, 33%, 43%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A2043", endColorstr="#14205C", GradientType=1 );
+}
 
 .custom-outline {
     text-shadow: 

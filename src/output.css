@@ -807,16 +807,6 @@ video {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.from-blue-950 {
-  --tw-gradient-from: #172554 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(23 37 84 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-red-950 {
-  --tw-gradient-to: #450a0a var(--tw-gradient-to-position);
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -964,6 +954,13 @@ video {
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('images/header-image.png');
   background-size: cover;
   background-position: center;
+}
+
+.reason-card{
+  background: hsla(231, 44%, 18%, 1);
+  background: linear-gradient(315deg, hsla(231, 44%, 18%, 1) 0%, hsla(230, 64%, 22%, 1) 50%, hsla(319, 33%, 43%, 1) 100%);
+  background: -webkit-linear-gradient(315deg, hsla(231, 44%, 18%, 1) 0%, hsla(230, 64%, 22%, 1) 50%, hsla(319, 33%, 43%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A2043", endColorstr="#14205C", GradientType=1 );
 }
 
 .custom-outline {
@@ -1167,8 +1164,8 @@ video {
     height: 300px;
   }
 
-  .\32xl\:w-\[400px\] {
-    width: 400px;
+  .\32xl\:w-\[350px\] {
+    width: 350px;
   }
 
   .\32xl\:grid-cols-4 {
