@@ -23,3 +23,56 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+.faq-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-label:hover {
+  background-color: #475569;
+}
+
+.faq-label::after {
+  content: '+';
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.qcontainer input[type="radio"] {
+  display: none;
+}
+
+.faq-content {
+  background-color: #1e293b;
+  color: white;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.qcontainer input[type="radio"]:checked + .faq-label + .faq-content {
+  max-height: 500px;
+  padding: 15px 20px;
+  opacity: 1;
+}
+
+.qcontainer input[type="radio"]:checked + .faq-label::after {
+  content: '+';
+  transform: rotate(135deg);
+}
+

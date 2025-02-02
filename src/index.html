@@ -30,7 +30,7 @@
       <div class="mt-[200px] flex items-center justify-center flex-col">
         <div class="text-center">
           <h1
-            class="motion-translate-y-in-100 motion-duration-[2s] motion-ease-spring-smoothtext-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold"
+            class="motion-translate-y-in-100 motion-duration-[2s] motion-ease-spring-smoothtext-xl text-2xl md:text-3xl lg:text-5xl font-semibold"
           >
             Unlimited movies, TV shows <br />
             and more
@@ -58,10 +58,10 @@
       </div>
     </div>
     <div class="mt-20 px-[8%]">
-      <div class="text-2xl md:text-4xl font-bold">Trending now</div>
+      <div class="text-2xl md:text-3xl font-bold">Trending now</div>
       <div class="mt-[25px] md:mt-[50px] flex justify-center relative">
         <button
-          class="absolute text-2xl md:text-4xl left-[0px] top-[50%] rounded-full px-1 bg-slate-900 py-10 z-10"
+          class="absolute text-2xl md:text-4xl left-[0px] top-16 md:top-[130px] rounded-full px-1 bg-slate-900 py-10 z-10"
           id="prev-btn"
         >
           <
@@ -70,12 +70,105 @@
           class="movie-card-container md:w-[full] grid grid-flow-col auto-cols-max overflow-x-scroll overflow-y-hidden gap-[40px] scroll-smooth scrollbar-hide px-10"
         ></div>
         <button
-          class="absolute text-2xl md:text-4xl right-[0%] top-[50%] rounded-full px-1 bg-slate-900 py-10 z-10"
+          class="absolute text-2xl md:text-4xl right-[0%] top-16 md:top-[130px] rounded-full px-1 bg-slate-900 py-10 z-10"
           id="next-btn"
         >
           >
         </button>
       </div>
+    </div>
+
+    <div class="mx-[8%] mt-[50px]">
+      <div class="text-2xl md:text-3xl font-bold">More reasons to join</div>
+      <div
+        class="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-10 w-full"
+      >
+        <div
+          class="2xl:w-[400px] 2xl:h-[300px] sm:w-full h-[200px] rounded-xl p-8 bg-gradient-to-br from-blue-950 to-red-950"
+        >
+          <h1 class="text-2xl font-bold">Enjoy on your TV</h1>
+          <br />
+          <p class="text-lg">
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+        </div>
+        <div
+          class="2xl:w-[400px] 2xl:h-[300px] sm:w-full h-[200px] rounded-xl p-8 bg-gradient-to-br from-blue-950 to-red-950"
+        >
+          <h1 class="text-2xl font-bold">
+            Download your shows to watch offline
+          </h1>
+          <br />
+          <p class="text-lg">
+            Save your favourites easily and always have something to watch.
+          </p>
+        </div>
+
+        <div
+          class="2xl:w-[400px] 2xl:h-[300px] sm:w-full h-[200px] rounded-xl p-8 bg-gradient-to-br from-blue-950 to-red-950"
+        >
+          <h1 class="text-2xl font-bold">Watch everywhere</h1>
+          <br />
+          <p class="text-lg">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop
+            and TV.
+          </p>
+        </div>
+
+        <div
+          class="2xl:w-[400px] 2xl:h-[300px] sm:w-full h-[200px] rounded-xl p-8 bg-gradient-to-br from-blue-950 to-red-950 bg"
+        >
+          <h1 class="text-2xl font-bold">Create profiles for kids</h1>
+          <br />
+          <p class="text-lg">
+            Send kids on adventures with their favourite characters in a space
+            made just for them — free with your membership.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[100px] mx-[8%]">
+      <h1 class="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h1>
+      <ul class="my-10 mx-auto w-[80%] qcontainer">
+        <li class="list-none w-full p-2">
+          <input type="radio" name="question" id="first" class="hidden peer" />
+          <label for="first" class="faq-label">What is Netflix?</label>
+          <p class="faq-content">
+            Netflix is a streaming service that offers a wide variety of TV
+            shows, movies, anime, and documentaries.
+          </p>
+        </li>
+
+        <li class="list-none w-full p-2">
+          <input type="radio" name="question" id="second" class="hidden peer" />
+          <label for="second" class="faq-label"
+            >How much does Netflix cost?</label
+          >
+          <p class="faq-content">
+            Plans start at ₹149 a month. No extra costs, no contracts.
+          </p>
+        </li>
+
+        <li class="list-none w-full p-2">
+          <input type="radio" name="question" id="third" class="hidden peer" />
+          <label for="third" class="faq-label">Where can I cancel?</label>
+          <p class="faq-content">
+            You can easily cancel your account online in two clicks.
+          </p>
+        </li>
+
+        <li class="list-none w-full p-2">
+          <input type="radio" name="question" id="fourth" class="hidden peer" />
+          <label for="fourth" class="faq-label"
+            >What can I watch on Netflix?</label
+          >
+          <p class="faq-content">
+            Netflix offers feature films, documentaries, TV shows, anime, and
+            award-winning Netflix originals.
+          </p>
+        </li>
+      </ul>
     </div>
     <script src="script.js"></script>
   </body>

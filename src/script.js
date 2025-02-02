@@ -58,3 +58,16 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   scrollElement.scrollBy({ left: -400, behavior: "smooth" });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll('.qcontainer input[type="radio"]');
+
+  faqItems.forEach((item) => {
+    item.addEventListener("change", () => {
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.checked = false;
+        }
+      });
+    });
+  });
+});
